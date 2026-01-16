@@ -1,6 +1,7 @@
 # Testing and exploring GDAL bindings in Rust
 
 ### Compiling on HPC
+To complie the Rust bindings to GDAL, you need the following modules on a HPC Linux system (or your local system):
 
 ```bash
 module load rust/1.92.0
