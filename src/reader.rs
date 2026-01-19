@@ -2,7 +2,9 @@ use anyhow::{Context, Result};
 use gdal::raster::{GdalType, RasterBand, ResampleAlg};
 use ndarray::Array2;
 
+
 /// Read a window from a RasterBand into an ndarray::Array2.
+#[inline]
 pub fn read_as_array<T>(
     band: &RasterBand,
     window: (isize, isize),
@@ -31,6 +33,7 @@ where
 
 
 /// Convenience to read the entire band into an Array2.
+#[inline]
 pub fn read_full_band<T>(band: &RasterBand) -> Result<Array2<T>>
 where
     T: Copy + GdalType,
