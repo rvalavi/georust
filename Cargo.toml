@@ -7,3 +7,4 @@ edition = "2024"
 gdal = { version = "0.19", features = ["bindgen"] }
 anyhow = "1.0"
 shellexpand = "3.1"
+ndarray = "0.16"
